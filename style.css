@@ -1,11 +1,13 @@
 body {
-	font-family: Arial;
-	font-size: 16px;
-	line-height: 1.5;
-	
-	background-color: black;
-	color: #fff;
+  font-family: Lunchtype;
+  font-size: 16px;
+  line-height: 1.5;
 
+  background-color: black;
+  color: #fff;
+
+  margin: 40px auto;
+  padding: 0 40px;
 }
 
 canvas {
@@ -13,5 +15,35 @@ canvas {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
+h3 {
+  font-family: Glyph Mountain;
+  font-size: 40px;
+  color: #f4ff09;
+}
+
+section.container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.container h3:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+  color: greenyellow;
+}
+
+.container h3:nth-child(2) {
+  grid-column: 3;
+  grid-row: 1;
+  color: red;
+}
+
+.container h3:nth-child(3) {
+  grid-column: 1;
+  grid-row: 3;
+  color: blue;
+}
