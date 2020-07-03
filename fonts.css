@@ -15,3 +15,9 @@
   src: url("GlyphWorld-Mountain.otf");
   font-style: normal;
 }
+
+@font-face {
+  font-family: Glyph Forest;
+  src: url("GlyphWorld-Forest.otf");
+  font-style: normal;
+}
