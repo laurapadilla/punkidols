@@ -25,8 +25,6 @@ h3 {
 h3:hover {
   cursor: pointer;
   font-family: Glyph Forest;
-  background-color: red;
-  color: white;
 }
 
 section.container {
