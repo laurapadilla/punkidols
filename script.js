@@ -19,10 +19,10 @@ function setup() {
 function draw() {
   // noise level
   const nl = 0.01;
-  background("black");
+  background("#e6ff2f");
 
   //   fill for anything below this
-  fill("#e6ff2f");
+  fill("black");
   noStroke();
 
   points.forEach((point) => {
@@ -37,7 +37,7 @@ function draw() {
   // this applies to the vertext below and
   // won't affect what's above
   noFill();
-  stroke("#e6ff2f");
+  stroke("black");
 
   beginShape();
   points.forEach((point) => {
