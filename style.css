@@ -19,6 +19,7 @@ h3 {
   font-family: Glyph Mountain;
   font-size: 48px;
   transition: all 0.2s ease-in-out;
+  color: #e6ff2f;
 }
 
 h3:hover {
@@ -47,7 +48,7 @@ section.container {
   grid-column: 2;
   grid-row: 1;
   transform: rotate(3deg);
-  color: cyan;
+  // color: cyan;
 }
 
 /* Joan */
@@ -55,14 +56,14 @@ section.container {
   grid-column: 1;
   grid-row: 1;
   transform: rotate(-20deg);
-  color: fuchsia;
+  // color: fuchsia;
 }
 
 /* Debbie */
 .artist:nth-child(3) {
   grid-column: 3;
   grid-row: 1;
-  color: gold;
+  // color: gold;
   transform: rotate(-10deg);
 }
 
@@ -70,7 +71,7 @@ section.container {
 .artist:nth-child(4) {
   grid-column: 1;
   grid-row: 2;
-  color: white;
+  // color: white;
   transform: rotate(3deg);
 }
 
@@ -78,7 +79,7 @@ section.container {
 .artist:nth-child(5) {
   grid-column: 3;
   grid-row: 2;
-  color: pink;
+  // color: pink;
   transform: rotate(48deg);
 }
 
@@ -86,7 +87,7 @@ section.container {
 .artist:nth-child(6) {
   grid-column: 1;
   grid-row: 3;
-  color: tomato;
+  // color: tomato;
   transform: rotate(-11deg);
 }
 
@@ -94,7 +95,7 @@ section.container {
 .artist:nth-child(7) {
   grid-column: 2;
   grid-row: 3;
-  color: peachpuff;
+  // color: peachpuff;
   transform: rotate(1deg);
 }
 
@@ -102,6 +103,6 @@ section.container {
 .artist:nth-child(8) {
   grid-column: 3;
   grid-row: 3;
-  color: mediumspringgreen;
+  // color: mediumspringgreen;
   transform: rotate(19deg);
 }
