@@ -2,7 +2,7 @@ let font;
 let points;
 
 function preload() {
-  font = loadFont("bluunext-bold.otf");
+  font = loadFont("fonts/bluunext-bold.otf");
 }
 
 function setup() {
