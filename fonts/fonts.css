@@ -1,23 +1,23 @@
 @font-face {
   font-family: Lunchtype Medium;
-  src: url("lunchtype24-medium-expanded-webfont.woff2");
+  src: url("./lunchtype24-medium-expanded-webfont.woff2");
   font-style: normal;
 }
 
 @font-face {
   font-family: Lunchtype;
-  src: url("lunchtype22-regular-webfont.woff2");
+  src: url("./lunchtype22-regular-webfont.woff2");
   font-style: normal;
 }
 
 @font-face {
   font-family: Glyph Mountain;
-  src: url("GlyphWorld-Mountain.otf");
+  src: url("./GlyphWorld-Mountain.otf");
   font-style: normal;
 }
 
 @font-face {
   font-family: Glyph Forest;
-  src: url("GlyphWorld-Forest.otf");
+  src: url("./GlyphWorld-Forest.otf");
   font-style: normal;
 }
