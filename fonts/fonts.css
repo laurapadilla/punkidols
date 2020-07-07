@@ -21,3 +21,15 @@
   src: url("./GlyphWorld-Forest.otf");
   font-style: normal;
 }
+
+@font-face {
+  font-family: Savate;
+  src: url("./savate-regular-webfont.woff2");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Savate;
+  src: url("./savate-italique-webfont.woff2");
+  font-style: italic;
+}
