@@ -27,3 +27,22 @@
   src: url("./savate-regular-webfont.woff2");
   font-style: normal;
 }
+
+@font-face {
+  font-family: Space Grotesk;
+  src: url("./SpaceGroteskVariable.ttf");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Compagnon;
+  src: url("./Compagnon-Roman.woff2");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Self Modern;
+  src: url("./bretagne_self-modern_text_web.woff2");
+  font-style: normal;
+}
