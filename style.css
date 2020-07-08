@@ -45,10 +45,6 @@ section.container .artists {
 }
 
 .modal {
-  position: fixed;
-}
-
-.modal-content {
   display: block;
 }
 
