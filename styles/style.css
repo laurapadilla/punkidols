@@ -1,7 +1,32 @@
 :root {
-  --light-red: #ef7373;
+  --light-red: #f54d4d;
   --blue: #100ce8;
   --yellow: #e6ff2f;
+}
+
+/* ANIMATIONS */
+
+/* Marquee */
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1500vw);
+  }
+}
+
+/* Font animation */
+@keyframes animate-type {
+  0% {
+    font-variation-settings: "wght" 200;
+    letter-spacing: 0;
+  }
+
+  100% {
+    font-variation-settings: "wght" 800;
+    letter-spacing: 2px;
+  }
 }
 
 body {
@@ -69,8 +94,9 @@ section.container .artists {
 
 .quote-patti {
   position: absolute;
-  top: 12%;
+  top: 13%;
   padding: 25px;
+  animation: animate-type 15s infinite alternate;
 }
 
 .quote-patti h2 {
@@ -94,17 +120,8 @@ section.container .artists {
   font-family: Glyph Forest;
 }
 
-@keyframes moveLeft {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-3000vw);
-  }
-}
-
 .marquee span {
-  animation: moveLeft 300s infinite;
+  animation: moveLeft 800s linear infinite;
   white-space: nowrap;
   display: block;
   position: relative;
