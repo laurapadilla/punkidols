@@ -1,5 +1,5 @@
 // when we hover on the artist name, give random rotation
-const artists = document.querySelectorAll("section .artists h3");
+const artists = document.querySelectorAll("section .artists h1");
 
 artists.forEach((artist) => {
   artist.addEventListener("mouseover", function () {

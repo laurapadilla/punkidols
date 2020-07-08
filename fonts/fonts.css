@@ -1,12 +1,6 @@
 @font-face {
-  font-family: Lunchtype Medium;
-  src: url("./lunchtype24-medium-expanded-webfont.woff2");
-  font-style: normal;
-}
-
-@font-face {
   font-family: Lunchtype;
-  src: url("./lunchtype22-regular-webfont.woff2");
+  src: url("./lunchtype24-medium-expanded-webfont.woff");
   font-style: normal;
 }
 
