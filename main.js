@@ -1,3 +1,12 @@
+// Select draggable elements
+var draggableElems = document.querySelectorAll(".draggable");
+var draggies = [];
+for (var i = 0, len = draggableElems.length; i < len; i++) {
+  var draggableElem = draggableElems[i];
+  var draggie = new Draggabilly(draggableElem, {});
+  draggies.push(draggie);
+}
+
 // when we hover on the artist name, give random rotation
 const artists = document.querySelectorAll("section .artists h1");
 
@@ -16,7 +25,7 @@ artists.forEach((artist) => {
 
 // Marquee code
 function makeMarquee() {
-  const title = "Patti Smith 🕶 ";
+  const title = "Patti Smith 🍋 ";
 
   // an array is a list of things
   const marqueeText = new Array(100).fill(title).join("  ");
