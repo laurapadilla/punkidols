@@ -1,6 +1,6 @@
 @font-face {
   font-family: Lunchtype;
-  src: url("./lunchtype24-medium-expanded-webfont.woff");
+  src: url("./lunchtype24-medium-expanded-webfont.woff") format("woff");
   font-style: normal;
 }
 
@@ -24,39 +24,51 @@
 
 @font-face {
   font-family: Savate;
-  src: url("./savate-regular-webfont.woff2");
+  src: url("./savate-regular-webfont.woff2"), format("woff2");
   font-style: normal;
 }
 
 @font-face {
   font-family: Space Grotesk;
-  src: url("./SpaceGroteskVariable.ttf");
+  src: url("./SpaceGroteskVariable.ttf"), format("truetype");
   font-style: normal;
   font-weight: 200;
 }
 
 @font-face {
   font-family: Compagnon;
-  src: url("./Compagnon-Roman.woff2");
+  src: url("./Compagnon-Roman.woff2"), format("woff2"),
+    url("./Compagnon-Roman.woff"), format("woff");
   font-style: normal;
 }
 
 @font-face {
   font-family: Self Modern;
-  src: url("./bretagne_self-modern_regular_web.woff2");
+  src: url("./bretagne_self-modern_regular_web.woff2") format("woff2"),
+    url("./bretagne_self-modern_regular_web.woff") format("woff"),
+    url("./bretagne_self-modern_regular_web.ttf") format("trutype");
   font-style: normal;
 }
 
 @font-face {
   font-family: Self Modern;
-  src: url("./bretagne_self-modern_italique_web.woff2");
+  src: url("./bretagne_self-modern_italic_web.woff2") format("woff2"),
+    url("./bretagne_self_modern_italic_web.woff") format("woff"),
+    url("./bretagne_self_modern_italic_web.ttf") format("truetype");
   font-style: italic;
 }
 
 @font-face {
   font-family: Self Modern Text;
-  src: url("./bretagne_self-modern_text_web.woff2");
+  src: url("./bretagne_self-modern_text_web.woff2"), format("woff2"),
+    url("./bretagne_self-modern_text_web.woff"), format("woff"),
+    url("./bretagne_self-modern_text_web.ttf"), format("truetype");
   font-style: normal;
+}
+
+@font-face {
+  font-family: Syne;
+  src: url("./Syne-Bold.otf");
 }
 
 .savate {
@@ -97,4 +109,14 @@
 
 .italic {
   font-style: italic;
+}
+
+.syne {
+  font-family: Syne;
+}
+
+.outline {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
 }

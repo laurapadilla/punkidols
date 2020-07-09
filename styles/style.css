@@ -1,5 +1,6 @@
 :root {
   --light-red: #f54d4d;
+  --red: #c72424;
   --blue: #100ce8;
   --yellow: #e6ff2f;
 }
@@ -94,7 +95,7 @@ section.container .artists {
 
 .artists h1 {
   text-align: center;
-  margin: 0 0 3.5rem 0;
+  margin: 3rem 0;
 }
 
 .flex {
@@ -114,6 +115,10 @@ section.container .artists {
   position: absolute;
 }
 
+.draggable {
+  cursor: grab;
+}
+
 /* PATTI */
 
 .patti {
@@ -121,7 +126,7 @@ section.container .artists {
   left: 3rem;
   max-width: 450px;
   width: 100%;
-  height: 400px;
+  height: 370px;
   background-color: white;
   color: var(--light-red);
 }
@@ -135,7 +140,7 @@ section.container .artists {
 
 .quote-patti h2 {
   font-size: 2rem;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 /* JOAN */
@@ -204,6 +209,39 @@ div.cherry {
 }
 
 /* DEBBIE */
+
+.debbie {
+  top: 50%;
+  right: 30%;
+  max-width: 500px;
+  width: 100%;
+  height: 390px;
+  background-color: var(--red);
+  color: white;
+}
+
+.debbie .modal-content {
+  padding: 20px 25px;
+  position: relative;
+}
+
+.debbie h2 {
+  font-size: 35px;
+}
+
+.quote-debbie h3 {
+  margin: 1.45rem 0 0 0;
+  font-size: 55px;
+}
+
+.debbie .modal-content img {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  width: 180px;
+  height: auto;
+  transform: rotate(-31deg);
+}
 
 footer {
   position: fixed;
