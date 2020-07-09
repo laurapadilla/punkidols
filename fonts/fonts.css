@@ -142,3 +142,11 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
 }
+
+.vertical {
+  position: absolute;
+  top: 50%;
+  right: -50%;
+  transform-origin: 0 0;
+  transform: rotate(90deg) translate(-50%, 50%);
+}
