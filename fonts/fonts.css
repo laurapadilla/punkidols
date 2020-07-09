@@ -38,7 +38,7 @@
 
 @font-face {
   font-family: Savate;
-  src: url("./savate-regular-webfont.woff2"), format("woff2");
+  src: url("./savate-regular-webfont.woff2") format("woff2");
   font-style: normal;
 }
 
@@ -51,8 +51,8 @@
 
 @font-face {
   font-family: Compagnon;
-  src: url("./Compagnon-Roman.woff2"), format("woff2"),
-    url("./Compagnon-Roman.woff"), format("woff");
+  src: url("./Compagnon-Roman.woff2") format("woff2"),
+    url("./Compagnon-Roman.woff") format("woff");
   font-style: normal;
 }
 
