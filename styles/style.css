@@ -3,6 +3,7 @@
   --red: #c72424;
   --blue: #100ce8;
   --yellow: #e6ff2f;
+  --magenta: #ff21c1;
 }
 
 /* ANIMATIONS */
@@ -25,8 +26,8 @@
   }
 
   100% {
-    font-variation-settings: "wght" 800;
-    letter-spacing: 2px;
+    font-variation-settings: "wght" 900;
+    letter-spacing: 1.3px;
   }
 }
 
@@ -98,14 +99,8 @@ section.container .artists {
   margin: 3rem 0;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.flex-column {
-  flex-direction: column;
+.magenta {
+  color: var(--magenta);
 }
 
 .modal {
@@ -175,8 +170,8 @@ section.container .artists {
 }
 
 .joan {
-  top: 2rem;
-  left: 3rem;
+  top: 5%;
+  left: 5%;
   max-width: 650px;
   width: 100%;
   height: 360px;
@@ -215,7 +210,7 @@ div.cherry {
   right: 30%;
   max-width: 500px;
   width: 100%;
-  height: 390px;
+  height: 415px;
   background-color: var(--red);
   color: white;
 }
@@ -232,6 +227,7 @@ div.cherry {
 .quote-debbie h3 {
   margin: 1.45rem 0 0 0;
   font-size: 55px;
+  line-height: 1.1;
 }
 
 .debbie .modal-content img {
@@ -241,6 +237,33 @@ div.cherry {
   width: 180px;
   height: auto;
   transform: rotate(-31deg);
+}
+
+/* KIRA */
+.kira {
+  top: 15%;
+  right: 20%;
+  max-width: 415px;
+  width: 100%;
+  height: 335px;
+  background-color: white;
+  color: black;
+}
+
+.kira h2 {
+  font-size: 40px;
+  position: absolute;
+  bottom: -6px;
+  left: 9%;
+  text-align: center;
+}
+
+.quote-kira {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 45px;
+  line-height: 1.2;
 }
 
 footer {
