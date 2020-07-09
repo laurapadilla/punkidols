@@ -213,7 +213,7 @@ section.container .artists {
   width: 100%;
   height: 360px;
   background-color: lavenderblush;
-  animation: change-bg 8s ease infinite;
+  animation: change-bg 12s ease infinite;
 }
 
 .joan h2 {
@@ -225,9 +225,11 @@ section.container .artists {
 }
 
 .quote-joan {
+  mix-blend-mode: difference;
   font-size: 1.8rem;
   margin: 1.4rem 0 1.5rem 0;
   line-height: 1.3;
+  color: white;
 }
 
 div.cherry {
@@ -386,6 +388,40 @@ path {
   font-size: 2rem;
   line-height: 1.3;
   letter-spacing: 1.5px;
+}
+
+/* SIOUX */
+.sioux {
+  top: 3%;
+  right: 2%;
+  max-width: 415px;
+  width: 100%;
+  height: 600px;
+  background-color: #fff;
+  color: var(--yellow);
+  background-image: url(/sioux-eyes.jpg);
+  background-position: center center;
+  background-size: contain;
+}
+
+.sioux .modal-content {
+  padding: 20px;
+}
+
+.sioux h2 {
+  font-size: 2rem;
+  background-color: var(--blue);
+}
+
+.quote-sioux {
+  font-size: 3rem;
+  z-index: 10;
+  position: absolute;
+  mix-blend-mode: difference;
+}
+
+.quote-sioux h3 {
+  font-size: 5rem;
 }
 
 footer {
