@@ -399,7 +399,7 @@ path {
   height: 600px;
   background-color: #fff;
   color: var(--yellow);
-  background-image: url(/images/sioux-eyes.jpg);
+  background-image: url(https://lauvpadilla.github.io/punkidols/images/sioux-eyes.jpg);
   background-position: center center;
   background-size: contain;
 }
