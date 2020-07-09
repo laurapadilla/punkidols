@@ -125,6 +125,7 @@ section.container .artists {
   height: 370px;
   background-color: white;
   color: var(--light-red);
+  z-index: 1;
 }
 
 .quote-patti {
