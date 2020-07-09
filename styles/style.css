@@ -54,6 +54,41 @@
   }
 }
 
+/* Gradient Animation */
+@-webkit-keyframes pj-gradient {
+  0% {
+    background-position: 0% 90%;
+  }
+  50% {
+    background-position: 100% 11%;
+  }
+  100% {
+    background-position: 0% 90%;
+  }
+}
+@-moz-keyframes pj-gradient {
+  0% {
+    background-position: 0% 90%;
+  }
+  50% {
+    background-position: 100% 11%;
+  }
+  100% {
+    background-position: 0% 90%;
+  }
+}
+@keyframes pj-gradient {
+  0% {
+    background-position: 0% 90%;
+  }
+  50% {
+    background-position: 100% 11%;
+  }
+  100% {
+    background-position: 0% 90%;
+  }
+}
+
 body {
   font-family: Lunchtype;
   font-size: 16px;
@@ -274,7 +309,7 @@ div.cherry {
   left: 2%;
   max-width: 415px;
   width: 100%;
-  height: 335px;
+  height: 300px;
   background-color: var(--green);
   color: black;
 }
@@ -289,7 +324,7 @@ div.cherry {
 
 .quote-poly {
   position: absolute;
-  top: 45%;
+  top: 37%;
 }
 
 .quote-poly h3 {
@@ -300,6 +335,57 @@ div.cherry {
 
 .quote-poly h3:nth-child(2) {
   font-size: 28px;
+}
+
+svg {
+  width: 370px;
+  height: 90px;
+  position: absolute;
+  left: 5%;
+  top: 16%;
+}
+
+path {
+  stroke: black;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  fill: none;
+}
+
+/* PJ */
+.pj {
+  bottom: 15%;
+  right: 2%;
+  max-width: 415px;
+  width: 100%;
+  height: 335px;
+  /* background-color: cyan; */
+  color: black;
+
+  background: linear-gradient(53deg, white, cyan);
+  background-size: 400% 400%;
+
+  -webkit-animation: pj-gradient 31s ease infinite;
+  -moz-animation: pj-gradient 31s ease infinite;
+  animation: pj-gradient 31s ease infinite;
+}
+
+.pj .modal-content {
+  padding: 1rem;
+}
+
+.pj h2 {
+  font-size: 3rem;
+}
+
+.quote-pj {
+  margin: 1.3rem 0 0 0;
+}
+
+.quote-pj h3 {
+  font-size: 2rem;
+  line-height: 1.3;
+  letter-spacing: 1.5px;
 }
 
 footer {
