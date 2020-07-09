@@ -30,7 +30,7 @@
 
 @font-face {
   font-family: Space Grotesk;
-  src: url("./SpaceGroteskVariable.ttf"), format("truetype");
+  src: url("./SpaceGroteskVariable.ttf");
   font-style: normal;
   font-weight: 200;
 }
