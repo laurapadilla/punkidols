@@ -18,6 +18,13 @@
 
 @font-face {
   font-family: Buffon;
+  src: url("./Buffon-Thin.otf");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Buffon;
   src: url("./Buffon-Regular.otf");
   font-style: normal;
 }
@@ -120,6 +127,10 @@
 
 .bold {
   font-weight: bold;
+}
+
+.thin {
+  font-weight: 200;
 }
 
 .syne {
