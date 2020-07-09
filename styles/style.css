@@ -160,7 +160,7 @@ section.container .artists {
   height: 370px;
   background-color: white;
   color: var(--light-red);
-  z-index: 1;
+  z-index: 3;
 }
 
 .quote-patti {
@@ -186,7 +186,7 @@ section.container .artists {
   font-size: 1.5rem;
   overflow: hidden;
   padding: 10px 15px;
-  z-index: 1;
+  z-index: 3;
   font-family: Glyph Forest;
 }
 
@@ -239,7 +239,7 @@ div.cherry {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  z-index: 100;
+  z-index: 3;
 }
 
 /* DEBBIE */
@@ -415,7 +415,7 @@ path {
 
 .quote-sioux {
   font-size: 3rem;
-  z-index: 10;
+  z-index: 2;
   position: absolute;
   mix-blend-mode: difference;
 }
