@@ -16,7 +16,7 @@ artists.forEach((artist) => {
 
 // Marquee code
 function makeMarquee() {
-  const title = "Patti Smith 🍒 ";
+  const title = "Patti Smith 🕶 ";
 
   // an array is a list of things
   const marqueeText = new Array(100).fill(title).join("  ");
