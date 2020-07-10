@@ -7,9 +7,11 @@ for (var i = 0, len = draggableElems.length; i < len; i++) {
   draggies.push(draggie);
 }
 
-// when we hover on the artist name, give random rotation
-const artists = document.querySelectorAll("section .artists h1");
+const artists = document.querySelectorAll("h1.artist");
+const bodyTag = document.querySelector("body");
+let z = 100;
 
+// when we hover on the artist name, give random rotation
 artists.forEach((artist) => {
   artist.addEventListener("mouseover", function () {
     let rotation = 3 * Math.floor(Math.random() * 5) - 5;
@@ -20,6 +22,16 @@ artists.forEach((artist) => {
 artists.forEach((artist) => {
   artist.addEventListener("mouseout", function () {
     artist.style.transform = "";
+  });
+});
+
+// Open modal for each artist
+artists.forEach((artist) => {
+  const modal = document.querySelector(".modal");
+  artist.addEventListener("click", function () {
+    modal.classList.remove("d-none");
+    modal.style.zIndex = z;
+    z = z + 1;
   });
 });
 
@@ -39,6 +51,7 @@ function makeMarquee() {
 
 makeMarquee();
 
+// CHERRY CODE
 function randomizePosition() {
   // get the dimensions of the viewport and remove the size of the div
   var h = $("div.joan").height() - 40;
@@ -50,7 +63,7 @@ function randomizePosition() {
   return [newh, neww];
 }
 
-// move that peach! using jQuery's animate function, plugging in new coordinates and speed
+// Move the cherry around div
 function animateDiv() {
   var newq = randomizePosition();
   var oldq = $(".cherry").offset();
@@ -73,7 +86,6 @@ function calculateSpeed(prev, next) {
 animateDiv();
 
 // WAVE ANIMATION
-
 let xs = [];
 // x is 0 to 500 px across
 for (var i = 0; i < 1500; i++) {

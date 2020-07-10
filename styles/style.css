@@ -150,6 +150,10 @@ section.container .artists {
   cursor: grab;
 }
 
+.d-none {
+  display: none;
+}
+
 /* PATTI */
 
 .patti {
