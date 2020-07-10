@@ -424,6 +424,39 @@ path {
   font-size: 5rem;
 }
 
+/* KIM */
+.kim {
+  bottom: 30%;
+  right: 50%;
+  max-width: 415px;
+  width: 100%;
+  height: 305px;
+  background-color: #fff;
+}
+
+.kim .modal-content {
+  padding: 15px;
+}
+
+.kim h2 {
+  font-size: 40px;
+  margin: 0 0 15px 0;
+}
+
+.quote-kim {
+  font-size: 37px;
+}
+
+.highlight {
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+  background: linear-gradient(180deg, transparent 62%, #00ff90ff 0) 50%/0 75%
+    no-repeat;
+  background-size: 100% 100%;
+  display: inline;
+}
+
 footer {
   position: fixed;
   bottom: 0;

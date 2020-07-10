@@ -85,6 +85,11 @@
   src: url("./Syne-Bold.otf");
 }
 
+@font-face {
+  font-family: Terminal Grotesque;
+  src: url("./terminal-grotesque_open.otf");
+}
+
 .savate {
   font-family: Savate;
 }
@@ -95,6 +100,10 @@
 
 .self-text {
   font-family: Self Modern Text;
+}
+
+.terminal {
+  font-family: Terminal Grotesque;
 }
 
 .compagnon {
