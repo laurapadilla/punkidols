@@ -31,8 +31,7 @@ modalLinks.forEach((link) => {
 //     const modal = link.getAttribute("data-modal");
 //     const modalContent = document.getElementsByClassName("modal");
 //     modalContent.classList.remove("d-none");
-//     // modalContent.style.zIndex = z;
-//     // z = z + 1;
+
 //   });
 // });
 
@@ -44,6 +43,17 @@ for (var i = 0; i < modalLinks.length; i++) {
     function () {
       var modal = document.getElementById(this.dataset.modal);
       modal.style.display = "block";
+      modal.style.zIndex = z;
+      z = z + 1;
+
+      // create random positioning for modals
+      const divWidth = modal.getBoundingClientRect().width;
+      const divHeight = modal.getBoundingClientRect().height;
+      const x = Math.random() * (window.innerWidth - divWidth - 150);
+      const y = Math.random() * (window.innerHeight - divHeight - 50);
+
+      modal.style.left = x + "px";
+      modal.style.top = y + "px";
     },
     false
   );
