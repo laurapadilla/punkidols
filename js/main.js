@@ -7,33 +7,47 @@ for (var i = 0, len = draggableElems.length; i < len; i++) {
   draggies.push(draggie);
 }
 
-const artists = document.querySelectorAll("h1.artist");
+const modalLinks = document.querySelectorAll("h1.artist-link");
 const bodyTag = document.querySelector("body");
 let z = 100;
 
 // when we hover on the artist name, give random rotation
-artists.forEach((artist) => {
-  artist.addEventListener("mouseover", function () {
+modalLinks.forEach((link) => {
+  link.addEventListener("mouseover", function () {
     let rotation = 3 * Math.floor(Math.random() * 5) - 5;
-    artist.style.transform = `rotate(${rotation}deg)`;
+    link.style.transform = `rotate(${rotation}deg)`;
   });
 });
 
-artists.forEach((artist) => {
-  artist.addEventListener("mouseout", function () {
-    artist.style.transform = "";
+modalLinks.forEach((link) => {
+  link.addEventListener("mouseout", function () {
+    link.style.transform = "";
   });
 });
 
-// Open modal for each artist
-artists.forEach((artist) => {
-  const modal = document.querySelector(".modal");
-  artist.addEventListener("click", function () {
-    modal.classList.remove("d-none");
-    modal.style.zIndex = z;
-    z = z + 1;
-  });
-});
+// Open modal for each link
+// modalLinks.forEach((link) => {
+//   link.addEventListener("click", function () {
+//     const modal = link.getAttribute("data-modal");
+//     const modalContent = document.getElementsByClassName("modal");
+//     modalContent.classList.remove("d-none");
+//     // modalContent.style.zIndex = z;
+//     // z = z + 1;
+//   });
+// });
+
+// open modals for each artist
+for (var i = 0; i < modalLinks.length; i++) {
+  var thisLink = modalLinks[i];
+  thisLink.addEventListener(
+    "click",
+    function () {
+      var modal = document.getElementById(this.dataset.modal);
+      modal.style.display = "block";
+    },
+    false
+  );
+}
 
 // Marquee code
 function makeMarquee() {
