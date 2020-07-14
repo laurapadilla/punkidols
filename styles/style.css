@@ -111,6 +111,12 @@ body {
   background-color: var(--yellow);
   color: black;
   width: 100vw;
+  cursor: url(https://lauvpadilla.github.io/punkidols/images/bomb.png) 15 15,
+    auto;
+}
+
+.modals-open {
+  cursor: url();
 }
 
 canvas {
@@ -136,6 +142,15 @@ h1:hover {
 section.container {
   height: 100vh;
   position: relative;
+}
+
+section p.instructions {
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  /* transform: translateX(-50%); */
+  text-align: center;
 }
 
 section.container .artists {
