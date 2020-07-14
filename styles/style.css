@@ -523,3 +523,14 @@ footer p {
   font-size: 1.8rem;
   letter-spacing: 2px;
 }
+
+footer button {
+  font-size: 2rem;
+  border: none;
+  background-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+footer button:hover {
+  transform: rotate(-50deg);
+}

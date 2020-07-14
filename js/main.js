@@ -49,17 +49,17 @@ for (var i = 0; i < modalLinks.length; i++) {
   );
 }
 
-// Remove modal-open class and
-// hide modals one by one
-const modals = [...document.querySelectorAll("div.modal")];
+// Clear all modals
+const modals = document.querySelectorAll(".modal");
+const clearBtn = document.getElementById("clear");
 
-document.addEventListener("click", function () {
-  // get the last one and pop it off the end of the list
-  const last = modals.pop();
-
-  if (last) {
-    last.remove();
-  }
+modals.forEach((modal) => {
+  clearBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+    const audio = document.createElement("audio");
+    audio.setAttribute("src", "smw_thud.wav");
+    audio.play();
+  });
 });
 
 // Marquee code
