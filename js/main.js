@@ -11,7 +11,7 @@ const modalLinks = document.querySelectorAll("h1.artist-link");
 const bodyTag = document.querySelector("body");
 let z = 100;
 
-// when we hover on the artist name, give random rotation
+// when we hover on the artist name, add random rotation
 modalLinks.forEach((link) => {
   link.addEventListener("mouseover", function () {
     let rotation = 3 * Math.floor(Math.random() * 5) - 5;
@@ -25,17 +25,7 @@ modalLinks.forEach((link) => {
   });
 });
 
-// Open modal for each link
-// modalLinks.forEach((link) => {
-//   link.addEventListener("click", function () {
-//     const modal = link.getAttribute("data-modal");
-//     const modalContent = document.getElementsByClassName("modal");
-//     modalContent.classList.remove("d-none");
-
-//   });
-// });
-
-// open modals for each artist
+// Open modals for each artist
 for (var i = 0; i < modalLinks.length; i++) {
   var thisLink = modalLinks[i];
   thisLink.addEventListener(
@@ -49,8 +39,8 @@ for (var i = 0; i < modalLinks.length; i++) {
       // create random positioning for modals
       const divWidth = modal.getBoundingClientRect().width;
       const divHeight = modal.getBoundingClientRect().height;
-      const x = Math.random() * (window.innerWidth - divWidth - 150);
-      const y = Math.random() * (window.innerHeight - divHeight - 50);
+      const x = Math.random() * (window.innerWidth - divWidth);
+      const y = Math.random() * (window.innerHeight - divHeight);
 
       modal.style.left = x + "px";
       modal.style.top = y + "px";
@@ -58,6 +48,19 @@ for (var i = 0; i < modalLinks.length; i++) {
     false
   );
 }
+
+// Remove modal-open class and
+// hide modals one by one
+const modals = [...document.querySelectorAll("div.modal")];
+
+document.addEventListener("click", function () {
+  // get the last one and pop it off the end of the list
+  const last = modals.pop();
+
+  if (last) {
+    last.remove();
+  }
+});
 
 // Marquee code
 function makeMarquee() {
