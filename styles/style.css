@@ -115,10 +115,6 @@ body {
     auto;
 }
 
-.modals-open {
-  cursor: url();
-}
-
 canvas {
   position: fixed;
   top: 50%;
