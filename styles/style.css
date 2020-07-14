@@ -524,6 +524,16 @@ footer p {
   letter-spacing: 2px;
 }
 
+footer p a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer p a:hover {
+  background-color: var(--blue);
+  color: white;
+}
+
 footer button {
   font-size: 2rem;
   border: none;
