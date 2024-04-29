@@ -146,6 +146,18 @@ section.container {
   position: relative;
 }
 
+section.containerMobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+section.containerMobile h1 {
+  text-align: center;
+  font-size: 5vmax;
+}
+
 section p.instructions {
   font-size: 24px;
   position: absolute;
@@ -543,4 +555,23 @@ footer button {
 
 footer button:hover {
   transform: rotate(-50deg);
+}
+
+@media (max-width: 800px) {
+  section.container,
+  canvas {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  footer button {
+    display: none;
+  }
 }

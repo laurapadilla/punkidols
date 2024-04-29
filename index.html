@@ -1,185 +1,198 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="SuperHi" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Punk Idols</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <meta name="title" content="punk idols by @1aurapadilla" />
+    <meta name="description" content="get to know the baddies of punk rock" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://punkidols.vercel.app/" />
+    <meta property="og:title" content="punk idols by @1aurapadilla" />
+    <meta
+      property="og:description"
+      content="get to know the baddies of punk rock"
+    />
+    <meta property="og:image" content="https://punkidols.vercel.app/meta.jpg" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://punkidols.vercel.app/" />
+    <meta property="twitter:title" content="punk idols by @1aurapadilla" />
+    <meta
+      property="twitter:description"
+      content="get to know the baddies of punk rock"
+    />
+    <meta
+      property="twitter:image"
+      content="https://punkidols.vercel.app/meta.jpg"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="generator" content="SuperHi">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Punk Idols</title>
-	<link rel="stylesheet" href="styles/base.css">
-	<link rel="stylesheet" href="styles/style.css">
-	<link rel="stylesheet" href="fonts/fonts.css">
-	<meta name="title" content="punk idols by @1aurapadilla" />
-	<meta name="description"
-		content="get to know the baddies of punk rock" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://punkidols.vercel.app/" />
-	<meta property="og:title" content="punk idols by @1aurapadilla" />
-	<meta property="og:description"
-		content="get to know the baddies of punk rock" />
-	<meta property="og:image" content="https://punkidols.vercel.app/meta.jpg" />
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://punkidols.vercel.app/" />
-	<meta property="twitter:title" content="punk idols by @1aurapadilla" />
-	<meta property="twitter:description"
-		content="get to know the baddies of punk rock" />
-	<meta property="twitter:image" content="https://punkidols.vercel.app/meta.jpg" />
-</head>
+  <body>
+    <canvas id="canvas"></canvas>
 
-<body>
+    <!-- Main Container -->
+    <section class="container">
+      <p class="instructions compagnon">
+        Click on each badass to reveal a quote. <br />
+        <span class="self italic">Drag each pop-up around the screen.</span>
+      </p>
 
-	<canvas id="canvas"></canvas>
+      <div class="artists glyph-mountain">
+        <h1 class="artist-link" data-modal="patti">Patti Smith</h1>
+        <h1 class="artist-link" data-modal="joan">Joan Jett</h1>
+        <h1 class="artist-link" data-modal="debbie">Debbie Harry</h1>
+        <h1 class="artist-link" data-modal="kira">Kira Roessler</h1>
+        <h1 class="artist-link" data-modal="poly">Poly Styrene</h1>
+        <h1 class="artist-link" data-modal="pj">PJ Harvey</h1>
+        <h1 class="artist-link" data-modal="sioux">Siouxie Sioux</h1>
+        <h1 class="artist-link" data-modal="kim">Kim Gordon</h1>
+      </div>
 
-	<!-- Main Container -->
-	<section class="container">
-		<p class="instructions compagnon">Click on each badass to reveal a quote. <br> <span class="self italic">Drag
-				each
-				pop-up
-				around the screen.</span>
-		</p>
+      <!-- PATTI -->
+      <div class="modal patti draggable d-none" id="patti">
+        <div class="modal-content">
+          <div class="marquee">
+            <span>Patti Smith // </span>
+          </div>
+          <div class="quote-patti space">
+            <h2>
+              To me, punk rock is the freedom to create, freedom to be
+              successful, freedom to not be successful, freedom to be who you
+              are. It's freedom.
+            </h2>
+          </div>
+        </div>
+      </div>
 
-		<div class="artists glyph-mountain">
+      <!-- JOAN -->
+      <div class="modal joan draggable d-none" id="joan">
+        <div class="modal-content">
+          <h2 class="glyph-forest">Joan Jett</h2>
+          <div class="cherry">🍒</div>
 
-			<h1 class="artist-link" data-modal="patti">Patti Smith</h1>
-			<h1 class="artist-link" data-modal="joan">Joan Jett</h1>
-			<h1 class="artist-link" data-modal="debbie">Debbie Harry</h1>
-			<h1 class="artist-link" data-modal="kira">Kira Roessler</h1>
-			<h1 class="artist-link" data-modal="poly">Poly Styrene</h1>
-			<h1 class="artist-link" data-modal="pj">PJ Harvey</h1>
-			<h1 class="artist-link" data-modal="sioux">Siouxie Sioux</h1>
-			<h1 class="artist-link" data-modal="kim">Kim Gordon</h1>
-		</div>
+          <div class="quote-joan tilt-up">
+            <h3>
+              Other people will call me a <span class="savate">rebel</span>, but
+              I just feel like I'm living <span class="self">my life</span> and
+              doing what I want to do
+            </h3>
+          </div>
+          <div class="quote-joan tilt-down">
+            <h3>
+              Sometimes people call that rebellion,
+              <span class="compagnon">especially</span> when you're a
+              <span class="self italic">woman</span>.
+            </h3>
+          </div>
+        </div>
+      </div>
 
-		<!-- PATTI -->
-		<div class="modal patti draggable d-none" id="patti">
-			<div class="modal-content">
-				<div class="marquee">
-					<span>Patti Smith //
-					</span>
-				</div>
-				<div class="quote-patti space">
-					<h2>To me, punk rock is the freedom to create, freedom to be successful, freedom to not be
-						successful, freedom
-						to be who you are. It's freedom.</h2>
-				</div>
-			</div>
-		</div>
+      <!-- DEBBIE -->
+      <div class="modal debbie draggable d-none" id="debbie">
+        <div class="modal-content">
+          <h2 class="glyph-forest">Debbie Harry</h2>
+          <div class="quote-debbie syne">
+            <h3>
+              <span class="outline">I have a lot of</span> regrets,
+              <span class="outline">but I’m</span> not going to
+              <span class="outline">think of them as</span> regrets.
+            </h3>
+          </div>
+          <img src="images/blondie 1.png" />
+        </div>
+      </div>
 
-		<!-- JOAN -->
-		<div class="modal joan draggable d-none" id="joan">
-			<div class="modal-content">
-				<h2 class="glyph-forest">Joan Jett</h2>
-				<div class="cherry">🍒</div>
+      <!-- KIRA -->
+      <div class="modal kira draggable d-none" id="kira">
+        <div class="modal-content">
+          <h2 class="glyph-forest">Kira Roessler</h2>
+          <div class="quote-kira">
+            <h3 class="compagnon">
+              <span class="savate italic magenta blinking">Nonconformity</span>
+              is still the watchword for me.
+            </h3>
+          </div>
+        </div>
+      </div>
 
-				<div class="quote-joan tilt-up">
-					<h3>Other people will call me a <span class="savate">rebel</span>, but I just feel like I'm living
-						<span class="self">my
-							life</span> and doing what I want to do
-					</h3>
-				</div>
-				<div class="quote-joan tilt-down">
-					<h3>Sometimes people call that rebellion, <span class="compagnon">especially</span> when you're a
-						<span class="self italic">woman</span>.</h3>
-				</div>
+      <!-- POLY -->
+      <div class="modal poly draggable d-none" id="poly">
+        <div class="modal-content">
+          <h2 class="glyph-forest">Poly Styrene</h2>
+          <svg id="wave">
+            <path></path>
+          </svg>
+          <div class="quote-poly">
+            <h3 class="self italic">
+              Some people think little girls should be seen and not heard. But I
+              think:
+            </h3>
+            <h3 class="buffon bold">OH BONDAGE UP YOURS!</h3>
+          </div>
+        </div>
+      </div>
 
-			</div>
-		</div>
+      <!-- PJ -->
+      <div class="modal pj draggable d-none" id="pj">
+        <div class="modal-content">
+          <h2 class="glyph-forest">PJ Harvey</h2>
+          <div class="quote-pj">
+            <h3 class="buffon thin">
+              Making me into a role model is placing too much importance on what
+              I see as a work in progress.
+            </h3>
+          </div>
+        </div>
+      </div>
 
-		<!-- DEBBIE -->
-		<div class="modal debbie draggable d-none" id="debbie">
-			<div class="modal-content">
-				<h2 class="glyph-forest">Debbie Harry</h2>
-				<div class="quote-debbie syne">
-					<h3> <span class="outline">I have a lot of</span> regrets, <span class="outline">but I’m</span> not
-						going to
-						<span class="outline">think of them as</span> regrets.
-					</h3>
-				</div>
-				<img src="images/blondie 1.png">
-			</div>
-		</div>
+      <!-- SIOUXIE -->
+      <div class="modal sioux draggable d-none" id="sioux">
+        <div class="modal-content">
+          <h2 class="self vertical">Siouxie Sioux</h2>
+          <div class="quote-sioux">
+            <h3 class="self">
+              Do what you want and f✻ck what everyone else thinks
+            </h3>
+          </div>
+        </div>
+      </div>
 
-		<!-- KIRA -->
-		<div class="modal kira draggable d-none" id="kira">
-			<div class="modal-content">
-				<h2 class="glyph-forest">Kira Roessler</h2>
-				<div class="quote-kira">
-					<h3 class="compagnon"><span class="savate italic magenta blinking">Nonconformity</span> is still the
-						watchword
-						for me.
-					</h3>
-				</div>
-			</div>
-		</div>
+      <!-- KIM -->
+      <div class="modal kim draggable d-none" id="kim">
+        <div class="modal-content">
+          <h2 class="glyph-forest">Kim Gordon</h2>
+          <div class="quote-kim">
+            <h3 class="highlight terminal">
+              Women aren’t allowed to be kick-ass … At the end of the day, women
+              are expected to hold up the world, not annihilate it.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- POLY -->
-		<div class="modal poly draggable d-none" id="poly">
-			<div class="modal-content">
-				<h2 class="glyph-forest">Poly Styrene</h2>
-				<svg id="wave">
-					<path></path>
-				</svg>
-				<div class="quote-poly">
-					<h3 class="self italic">
-						Some people think little girls should be seen and not heard. But I think:
-					</h3>
-					<h3 class="buffon bold">OH BONDAGE UP YOURS!</h3>
-				</div>
-			</div>
-		</div>
+    <section class="containerMobile">
+      <h1>This site is much more fun on a bigger screen ☺︎</h1>
+    </section>
 
-		<!-- PJ -->
-		<div class="modal pj draggable d-none" id="pj">
-			<div class="modal-content">
-				<h2 class="glyph-forest">PJ Harvey</h2>
-				<div class="quote-pj">
-					<h3 class="buffon thin">
-						Making me into a role model is placing too much importance on what I see as a work in progress.
-					</h3>
-				</div>
-			</div>
-		</div>
+    <footer>
+      <p>
+        made by <a href="https://twitter.com/1aurapadilla">@1aurapadilla</a>
+      </p>
+      <button id="clear">💣</button>
+    </footer>
 
-		<!-- SIOUXIE -->
-		<div class="modal sioux draggable d-none" id="sioux">
-			<div class="modal-content">
-				<h2 class="self vertical">Siouxie Sioux</h2>
-				<div class="quote-sioux">
-					<h3 class="self">Do what you want and f✻ck what everyone else thinks</h3>
-				</div>
-			</div>
-		</div>
-
-		<!-- KIM -->
-		<div class="modal kim draggable d-none" id="kim">
-			<div class="modal-content">
-				<h2 class="glyph-forest">Kim Gordon</h2>
-				<div class="quote-kim">
-					<h3 class="highlight terminal">Women aren’t allowed to be kick-ass … At the end of the day, women
-						are
-						expected to
-						hold up the world, not
-						annihilate it.</h3>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<footer>
-		<p>made by <a href="https://twitter.com/1aurapadilla">@1aurapadilla</a> </p>
-		<button id="clear">💣</button>
-	</footer>
-
-	<!-- Javascript -->
-	<!-- <script src="/superhi.js"></script> -->
-	<script src="js/jquery.js"></script>
-	<script src="js/p5.min.js"></script>
-	<script src="js/script.js"></script>
-	<script src="js/draggabilly.js"></script>
-	<script src="js/main.js"></script>
-
-</body>
-
+    <!-- Javascript -->
+    <!-- <script src="/superhi.js"></script> -->
+    <script src="js/jquery.js"></script>
+    <script src="js/p5.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/draggabilly.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
