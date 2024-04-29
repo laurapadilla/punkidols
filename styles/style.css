@@ -557,7 +557,7 @@ footer button:hover {
   transform: rotate(-50deg);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   section.container,
   canvas {
     display: none;
