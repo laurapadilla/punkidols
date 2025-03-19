@@ -147,10 +147,7 @@ section.container {
 }
 
 section.containerMobile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  display: none;
 }
 
 section.containerMobile h1 {
@@ -563,8 +560,11 @@ footer button:hover {
     display: none;
   }
 
-  section.containerMobile {
-  display: none;
+ section.containerMobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
   footer {
