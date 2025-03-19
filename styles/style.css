@@ -563,6 +563,10 @@ footer button:hover {
     display: none;
   }
 
+  section.containerMobile {
+  display: none;
+}
+
   footer {
     justify-content: center;
   }
